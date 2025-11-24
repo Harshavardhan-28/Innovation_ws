@@ -60,10 +60,10 @@ _Perplexity was used for **market research and problem discovery**._
 - Ideal for discovering **high-impact student problems**
 
 ### **Outputs**
-- Prompt: `prompts/perplexity_prompt.txt`  
-- Raw Output: `output/perplexity_output.md`  
+- Prompt: [`prompts/perplexity_prompt.txt`](prompts/perplexity_prompt.txt)  
+- Raw Output: [`output/perplexity_output.md`](output/perplexity_output.md)  
 - Images:  
-  - `Images/perplexity_output.png`  
+  - [`Images/perplexity_output.png`](Images/perplexity_output.png)  
 
 ### **Findings from Perplexity**
 Perplexity produced a comprehensive list of **7 major student problem clusters**, including:
@@ -88,7 +88,7 @@ _Notion AI was used for **insight organization, clustering, and opportunity prio
 - Provides an ICE (Impact–Confidence–Ease) framework for selecting the best idea
 
 ### **Outputs**
-- Prompt: `prompts/notionai_prompt.txt`  
+- Prompt: [`prompts/notionai_prompt.txt`](prompts/notionai_prompt.txt)  
 - Output: (Not included in repository - generated during Notion AI workflow)
 
 ### **What Notion AI Did**
@@ -113,8 +113,8 @@ _Gemini was used for **solution design, agent specification, tool comparison, an
 - Produces detailed system-level outputs (roles, inputs/outputs, flows)
 
 ### **Outputs**
-- Prompt: `prompts/gemini_prompt.txt`  
-- Output: `output/gemini_output.md`
+- Prompt: [`prompts/gemini_prompt.txt`](prompts/gemini_prompt.txt)  
+- Output: [`output/gemini_output.md`](output/gemini_output.md)
 
 ### **What Gemini Produced**
 - Defined all core agents:  
