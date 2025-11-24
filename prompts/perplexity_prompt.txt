@@ -1,0 +1,23 @@
+Search the web and compile a list of the most common, recurring, and high-impact problems faced by students (school, college, and university) that present strong opportunities for an entrepreneur to solve using a technology-based solution.
+
+Focus on problems that:
+- Affect a large number of students across regions
+- Are persistent and well-documented
+- Have clear pain points and measurable impact
+- Have gaps in current solutions or underserved needs
+- Could be solved using AI, software, apps, automation, or edtech tools
+
+For each problem:
+1. State the problem clearly in 2–3 lines.
+2. Summarize the evidence that this is a major issue (data, surveys, expert insights).
+3. Explain why existing solutions are insufficient.
+4. Suggest potential tech-based solution directions (e.g., AI, ML, mobile app, SaaS, automation).
+5. Provide citations for all claims.
+
+Format the output as a structured list with headings:
+- Problem
+- Evidence
+- Gap
+- Tech Solution Direction
+
+Ensure problems cover academics, mental health, productivity, financial stress, career guidance, information access, skill development, internships, exam prep, communication gaps, college management, and administrative challenges.

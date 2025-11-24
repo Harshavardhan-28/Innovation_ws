@@ -1,0 +1,112 @@
+Act as an expert in agentic AI systems, product strategy, ethical automation, growth design, and startup validation.
+
+I have an initial idea for a fully automated, agentic AI platform that helps students find internships without manually applying. 
+Your task is to significantly deepen, refine, and validate this idea using structured analysis and tool-based reasoning.
+
+==============================
+CONTEXT / CORE IDEA
+==============================
+- Students provide their preferences, skills, sectors of interest, and constraints.
+- An AI agent performs continuous web intelligence gathering to find internship opportunities that match the student.
+- Another agent extracts publicly available HR / recruiter / TA contact details from company sites, LinkedIn alternatives, job boards, and career pages.
+- Outreach agents automatically draft personalized cold emails and send them on behalf of the student.
+- A voice agent (optional) performs AI-powered call outreach to HR when appropriate.
+- A scheduling agent manages replies, follow-ups, interview scheduling, and reminders.
+
+==============================
+WHAT I WANT YOU TO DO
+==============================
+
+A. **Validate & Expand the Problem Space**  
+- Identify the top 10 real-world student pain points that justify this solution.  
+- Provide data-backed evidence or well-known trends.  
+- Identify failures of existing platforms (LinkedIn, Internshala, Naukri, college TPO systems).  
+- Identify high-friction tasks that agentic AI can automate better than humans.
+
+B. **Define the Agentic System Design**  
+For each required agent, specify:  
+- Name of the agent  
+- What it is responsible for  
+- Inputs it needs  
+- Outputs it generates  
+- How it collaborates with other agents  
+- Recommended tools/AI APIs to power it  
+Include agents such as:  
+1. Preference Intake Agent  
+2. Opportunity Research & Company Intelligence Agent  
+3. Web Scraping / Data Extraction Agent  
+4. Contact Information Extraction Agent  
+5. Email Outreach Agent  
+6. Voice Call Outreach Agent  
+7. Interview Scheduling Agent  
+8. Progress Tracking / CRM Agent  
+9. Safety, Compliance, and Consent Agent
+
+C. **Compare & Recommend Tools**  
+For each part of the system, compare at least **3 alternative tools/technologies**, using metrics:  
+- accuracy  
+- usability  
+- speed of development  
+- compliance & safety  
+- cost  
+- maintainability  
+Recommend only the best tool and justify it clearly.
+
+Examples to compare:  
+- Scraping: Firecrawl vs Apify vs Browserless  
+- Email automation: Resend vs Mailgun vs Gmail API  
+- Voice AI: Vapi vs ElevenLabs vs Google Speech AI  
+- AI Models: Gemini 2.0 vs OpenAI vs Claude  
+- Databases: Firebase vs Supabase vs MongoDB  
+- Hosting: Cloud Run vs Vercel vs Render  
+- Chrome automation: Puppeteer vs Playwright vs Browserbase
+
+D. **System Architecture**  
+Produce:  
+- a multi-agent workflow diagram (text-based)  
+- a backend architecture (API + database + agents + automation)  
+- data flow (student → preference engine → agents → outreach → response tracking)  
+- a safety architecture for cold emailing, rate-limits, spam filters, and opt-out automation  
+
+E. **Identify all Ethical, Legal, and Compliance Constraints**  
+Cover:  
+- scraping legality  
+- GDPR  
+- CAN-SPAM  
+- student consent  
+- opt-out management  
+- contacting HR without spam violations  
+- data retention limits  
+- how to ethically automate phone calls  
+Provide mitigation strategies for each.
+
+F. **Design the Full User Journey**  
+Include steps:  
+1. Onboarding  
+2. Preference definition  
+3. AI agent mapping (skills, resume analysis, intent understanding)  
+4. Continuous opportunity search  
+5. AI outreach  
+6. Response handling  
+7. Interview scheduling  
+8. Student dashboard  
+Be very detailed — I need this for a case study.
+
+G. **Roadmap & MVP Prioritization**  
+- What should be built first (MVP scope)  
+- What should be added in V2, V3  
+- How to test the MVP with 20–50 real students  
+- KPIs to measure success  
+
+H. **Final Output**  
+Provide:  
+- A refined, pitch-ready concept statement  
+- A 2–3 sentence product vision  
+- A list of unique differentiators vs traditional job portals  
+- Business model concepts suitable for students  
+
+==============================
+
+Make the response structured, deeply reasoned, tool-aware, and highly actionable. 
+Avoid vague or generic statements — provide concrete mechanisms, examples, and comparisons.
+
