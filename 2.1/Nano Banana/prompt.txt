@@ -1,0 +1,49 @@
+Create a clean, modern, workshop-ready User Flow Architecture Diagram for an AI-powered product called InternScout AI — Autonomous Internship Matchmaker for Students.
+Please design the diagram in a linear-but-layered workflow showing how a student interacts with the system end-to-end.
+
+The diagram must visualize all high-level steps, system actions, agent actions, and backend interactions.
+📌 Include These Stages in the User Flow
+1. User Entry & Onboarding
+Student signs up/login (Firebase Auth)
+User enters preferences + uploads resume
+2. System Intake
+Resume parsing
+Embedding generation
+Preference extraction
+Store data in DB + vector store
+3. Multi-Agent Automation
+Show each agent as a separate step:
+
+Preference Intake Agent
+Opportunity Discovery Agent
+Contact Extraction Agent
+Matching Engine
+Email Outreach Agent
+Voice Call Agent (optional)
+Scheduler Agent
+CRM & Tracking Agent
+Safety & Compliance Agent
+4. Data Sources
+Internship portals
+Company career pages
+Public HR contact sources
+Email API (Resend/Mailgun)
+Voice API (Vapi/ElevenLabs)
+5. Student Dashboard
+View matched opportunities
+See outreach progress
+Track application responses
+6. End State
+Student receives internships
+System continues scanning automatically
+📌 Style Requirements for Nana Banana Pro
+Use a clean user journey layout (left → right or top → bottom)
+Make system/agent actions visually distinct from user actions
+Use simple shapes: rounded rectangles for user actions, squares for system steps
+Use arrows showing flow between steps
+Group backend, agents, and external APIs in separate visual clusters
+Keep spacing clean and presentation-friendly
+📌 Output Expectations
+Generate a full user-flow architecture diagram
+No extra explanations, only the diagram
+Should be immediately suitable for a slide deck or workshop

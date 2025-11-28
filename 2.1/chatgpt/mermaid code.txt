@@ -1,0 +1,153 @@
+flowchart TD
+
+%% =========================
+%% STYLES
+%% =========================
+classDef frontend fill:#e5f9e7,stroke:#2e7d32,stroke-width:1px,color:#1b5e20
+classDef agent fill:#e3f2fd,stroke:#1565c0,stroke-width:1px,color:#0d47a1
+classDef data fill:#fff9c4,stroke:#f9a825,stroke-width:1px,color:#827717
+classDef external fill:#eeeeee,stroke:#616161,stroke-width:1px,color:#212121
+classDef infra fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#4a148c
+classDef process fill:#ffe0b2,stroke:#ef6c00,stroke-width:1px,color:#e65100
+
+%% =========================
+%% ENTRY / EXIT
+%% =========================
+USER([Student User]) --> FE_APP
+END_NODE([Deployed InternScout AI<br/>End-to-End System])
+
+%% =========================
+%% FRONTEND LAYER
+%% =========================
+subgraph FE[Frontend Layer- Student Web App Next.js]
+    FE_APP[Student Web App<br/>Next.js + Firebase Auth]:::frontend
+    FE_RESUME[Resume Upload<br/>& Preference Form]:::frontend
+    FE_DASH[Student Dashboard<br/>Opportunities & Outreach Status]:::frontend
+
+    FE_APP --> FE_RESUME
+    FE_APP --> FE_DASH
+end
+
+%% Frontend to Backend
+FE_APP --> API_GW
+FE_RESUME --> API_GW
+FE_DASH --> API_GW
+
+%% =========================
+%% BACKEND / CORE SYSTEM
+%% =========================
+subgraph BE[Backend / Core System]
+    API_GW[API Gateway / Backend Service Layer]:::infra
+
+    subgraph DATA[Data Layer]
+        DB_MAIN[(Primary Database<br/>Firebase / Supabase)]:::data
+        VS_STORE[(Vector Store<br/>Profiles & Job Embeddings)]:::data
+        STORAGE[(Storage Bucket<br/>Resumes & Artifacts)]:::data
+    end
+
+    API_GW --> DB_MAIN
+    API_GW --> VS_STORE
+    API_GW --> STORAGE
+end
+
+%% =========================
+%% PROCESSING PIPELINES
+%% =========================
+subgraph PIPE[Processing Pipelines]
+    RP[Resume Parsing Pipeline]:::process
+    EMB[Embedding Generation - Profiles & Jobs]:::process
+    MATCH[Opportunity Matching Engine]:::process
+    OUTREACH[Outreach Automation Pipeline]:::process
+    RESP_TRACK[Response Tracking<br/>& Status Updates]:::process
+end
+
+STORAGE --> RP
+RP --> EMB
+EMB --> VS_STORE
+VS_STORE --> MATCH
+DB_MAIN --> MATCH
+MATCH --> OUTREACH
+OUTREACH --> RESP_TRACK
+RESP_TRACK --> DB_MAIN
+RESP_TRACK --> VS_STORE
+DB_MAIN --> FE_DASH
+VS_STORE --> FE_DASH
+
+%% =========================
+%% MULTI-AGENT SYSTEM
+%% =========================
+subgraph AGENTS[Multi-Agent System]
+    PREF_AGENT[Preference Intake Agent]:::agent
+    DISC_AGENT[Opportunity Discovery Agent<br/>Scrapers + APIs]:::agent
+    CONTACT_AGENT[Contact Extraction Agent<br/>Ethical, Public Data Only]:::agent
+    EMAIL_AGENT[Email Outreach Agent]:::agent
+    VOICE_AGENT[Voice Call Agent]:::agent
+    SCHED_AGENT[Scheduler Agent]:::agent
+    CRM_AGENT[CRM & Tracking Agent]:::agent
+    SAFE_AGENT[Safety & Compliance Agent<br/>GDPR, CAN-SPAM]:::agent
+end
+
+%% Agents <-> Backend / Pipelines
+API_GW --> PREF_AGENT
+PREF_AGENT --> DB_MAIN
+PREF_AGENT --> VS_STORE
+
+API_GW --> DISC_AGENT
+DISC_AGENT --> MATCH
+
+CONTACT_AGENT --> DB_MAIN
+CONTACT_AGENT --> VS_STORE
+
+EMAIL_AGENT --> OUTREACH
+VOICE_AGENT --> OUTREACH
+
+SCHED_AGENT --> DISC_AGENT
+SCHED_AGENT --> OUTREACH
+
+CRM_AGENT --> RESP_TRACK
+RESP_TRACK --> CRM_AGENT
+
+SAFE_AGENT --> EMAIL_AGENT
+SAFE_AGENT --> VOICE_AGENT
+SAFE_AGENT --> CONTACT_AGENT
+
+%% =========================
+%% DATA SOURCES & EXTERNAL APIS
+%% =========================
+subgraph SOURCES[External Data Sources & APIs]
+    INT_PORTALS[Internship Portals<br/>LinkedIn, Indeed, Naukri, etc]:::external
+    CAREER_PAGES[Company Career Pages]:::external
+    HR_PUBLIC[HR Contact Sources<br/>Public Pages Only]:::external
+    EMAIL_API[Email API<br/>Resend / Mailgun]:::external
+    VOICE_API[Voice API<br/>Vapi / ElevenLabs]:::external
+end
+
+DISC_AGENT --> INT_PORTALS
+DISC_AGENT --> CAREER_PAGES
+
+CONTACT_AGENT --> HR_PUBLIC
+
+EMAIL_AGENT --> EMAIL_API
+VOICE_AGENT --> VOICE_API
+
+%% =========================
+%% INFRASTRUCTURE
+%% =========================
+subgraph INFRA[Infrastructure Layer]
+    CLOUD_RUN[App Runtime<br/>Cloud Run / Vercel / Firebase Functions]:::infra
+    CRON[Scheduler / Cron-like Triggers]:::infra
+    AUTH[Authentication Provider<br/>Firebase Auth / OAuth]:::infra
+end
+
+FE_APP --> AUTH
+AUTH --> API_GW
+
+API_GW --> CLOUD_RUN
+CRON --> SCHED_AGENT
+CRON --> DISC_AGENT
+
+%% =========================
+%% SYSTEM COMPLETION
+%% =========================
+DB_MAIN --> END_NODE
+VS_STORE --> END_NODE

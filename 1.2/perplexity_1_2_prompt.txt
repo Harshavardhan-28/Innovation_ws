@@ -1,0 +1,14 @@
+Task: Validate and score the business opportunity for InternScout AI — Autonomous Internship Matchmaker for Students. Provide up‑to‑date research, data, and a recommended scorecard.
+Context / Product summary:
+InternScout AI continuously discovers internship openings, extracts publicly available HR contacts ethically, personalizes outreach (email and optional voice), manages replies and scheduling, and ensures compliance (GDPR, CAN‑SPAM). Target users: high‑school seniors, undergraduates, postgraduates, and placement offices (B2C & B2B).
+What I need (structured):
+Top‑level verdict (1 paragraph): Is this a viable startup opportunity? Why / why not? Mention major constraints (data access, legal/regulatory, platform dependency).
+TAM / SAM / SOM estimates (with sources & dates): Global and India-focused where possible. Show assumptions and math. Break down by: total students, % actively seeking internships, average revenue per user (conservative/realistic/optimistic scenarios).
+Market segmentation: Student segments (by year/discipline/location), institutions (colleges/universities), career services, and enterprises hiring interns. Provide sizes or proxies for each segment.
+Competitive landscape: List direct and adjacent competitors (e.g., internship boards, ATS features, student platforms, outreach automation tools). For each: one‑line summary, strengths, weaknesses, and how InternScout differentiates.
+Opportunity scoring rubric (produce a table): Recommend a 0–10 score across dimensions: Market Size, Technical Feasibility, Legal/Compliance Risk, Monetization Potential, Time‑to‑Market, User Adoption Effort, Competitive Moat. Provide weighted aggregate score and explain weights.
+Monetization models & go‑to‑market: List viable revenue streams (freemium, subscription, placement fees, B2B licensing to colleges), expected CAC > LTV back‑of‑envelope numbers, and recommended first GTM channel(s).
+Regulatory & ethical checklist: Specific considerations for India and EU (GDPR, data scraping legality, CAN‑SPAM/email rules, consent for voice calls). Recommend safe design decisions and fallback approaches.
+Top 5 risks & mitigation: Short bullets with mitigations (technical, legal, adoption).
+Recommended next steps (tactical): 5 concrete actions (research, pilot, partnerships, metrics to track).
+Formatting: Return as structured sections with short tables for TAM/SAM/SOM and the scoring rubric. Include citations inline or at the end for any numbers or claims (site + date). Conclude with a one‑line recommendation (Go / Pivot / Research more).

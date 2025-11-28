@@ -1,0 +1,127 @@
+I am building an AI-powered product called InternScout AI — Autonomous Internship Matchmaker for Students.
+Please generate a complete set of high-fidelity wireframes for the student-facing web application.
+
+Design the wireframes with a clean, modern, minimal UI style similar to Notion, Linear, and modern AI dashboards.
+
+📌 Include the Following Screens
+1. Authentication
+
+Login Page: Email/password + Google Sign-In (Firebase Auth style).
+
+Signup Page: Collect name, email, password.
+
+2. Onboarding & Preferences
+
+Resume Upload Screen:
+
+Drag-and-drop card
+
+Upload button
+
+Progress indicator
+
+Preference Intake Form:
+
+Fields: interested roles, salary range, preferred locations, remote/on-site, skills, experience
+
+Next button
+
+Confirmation Screen: “Your profile is being analysed…”
+
+3. Student Dashboard
+
+Design a modern dashboard with:
+
+Sidebar: Home, Opportunities, Outreach, Settings
+
+Top area: Greeting (“Hi Aanchal 👋”), profile picture
+
+Widgets:
+
+Matching Score
+
+Applications Sent
+
+Interviews Scheduled
+
+New Opportunities
+
+A card-based layout of internship matches with:
+
+Job title
+
+Company
+
+Match percentage
+
+“View Details” / “Apply” button
+
+4. Opportunity Details Page
+
+Job description panel
+
+Match percentage
+
+Company info
+
+“Send Email Outreach” button
+
+“Save / Track” button
+
+5. Outreach Automation
+
+Screen showing:
+
+Emails sent
+
+Status (Sent, Opened, Replied)
+
+Timeline view
+
+Button to “Trigger Email Outreach”
+
+Button to “Enable Voice Agent Outreach (optional)”
+
+6. Tracking & CRM
+
+Visual tracker of all applications
+
+Kanban view:
+
+Interested → Applied → Interview → Offer → Rejected
+
+Filters for company, role, date
+
+7. Settings Page
+
+Profile settings
+
+Resume re-upload
+
+Notification preferences
+
+Integration toggles (Email, Voice, Calendar)
+
+📌 Design Style Requirements
+
+Minimal, light UI
+
+Soft color palette (white, grey, soft blue)
+
+Rounded corners and card-based structure
+
+Icons for navigation
+
+Clean typography (Inter / SF Pro style)
+
+Spacious layout suitable for dashboards
+
+📌 Final Output Requirements
+
+Generate all screens as wireframes
+
+Maintain UI consistency across all pages
+
+Include placeholders for all text and dynamic data
+
+Return the full wireflow in a connected, screen-by-screen format

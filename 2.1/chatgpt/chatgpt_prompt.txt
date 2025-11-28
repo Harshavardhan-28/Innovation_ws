@@ -1,0 +1,97 @@
+I am building an AI-powered product called InternScout AI — Autonomous Internship Matchmaker for Students.
+I need a complete, end-to-end system architecture diagram using Mermaid.
+
+Please generate a modern, clean, workshop-ready Mermaid flowchart TD architecture diagram that visually represents the entire application, not just the research phase.
+
+📌 Include the Following Components in the Diagram
+1. Frontend Layer
+
+Student Web App (Next.js/Firebase Auth)
+
+Resume upload + preference intake
+
+Dashboard for opportunities + outreach status
+
+2. Backend / Core System
+
+API gateway / backend service layer
+
+Database (Firebase/Supabase)
+
+Vector store (profiles + job embeddings)
+
+3. Multi-Agent System
+
+Include all core agents:
+
+Preference Intake Agent
+
+Opportunity Discovery Agent (Scrapers + APIs)
+
+Contact Extraction Agent (ethical/public data only)
+
+Email Outreach Agent
+
+Voice Call Agent (optional)
+
+Scheduler Agent
+
+CRM & Tracking Agent
+
+Safety & Compliance Agent (GDPR + CAN-SPAM)
+
+Show data flowing between agents and backend.
+
+4. Data Sources
+
+Internship portals (LinkedIn, Indeed, Naukri, etc.)
+
+Company career pages
+
+HR contact sources (public pages only)
+
+Email API (Resend/Mailgun)
+
+Voice API (Vapi/ElevenLabs)
+
+5. Infrastructure
+
+Cloud Run / Vercel / Firebase Functions
+
+Cron-like scheduler
+
+Storage bucket for resumes
+
+Authentication provider
+
+6. Processing Pipelines
+
+Resume parsing
+
+Embedding generation
+
+Opportunity matching
+
+Outreach automation
+
+Response tracking pipeline
+
+📌 Styling Requirements
+
+Use Mermaid flowchart TD
+
+Use classDef:
+
+Tools/Agents → Blue
+
+Data/DB → Yellow
+
+External APIs → Gray
+
+Frontend → Green
+
+Infrastructure → Purple
+
+Keep layout clean and easy for a workshop slide
+
+DO NOT add commentary or explanation — return Mermaid code only

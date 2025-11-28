@@ -1,0 +1,16 @@
+Identify the top real and emerging problems faced by students (high school, undergraduate, and postgraduate) in India and globally. Focus on academic, financial, emotional, technological, career, and lifestyle challenges. For each problem, provide:
+
+A clear problem statement
+
+Why this problem exists (root causes)
+
+How many students are affected (with recent data)
+
+The impact of this problem on their academic and personal lives
+
+Current solutions available and their limitations
+
+Gaps where AI-powered solutions could create major value.*
+
+Present the final output in a table with: Problem Area → Problem Statement → Severity → Market Size → Opportunity for AI.
+Also provide a final section with the ‘Top 5 high‑impact problems’ recommended for an AI startup idea.
