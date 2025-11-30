@@ -141,7 +141,8 @@ After validating the problem and opportunity (Phase 1) and defining an MVP (1.3)
 
 **Tools used in this repo:**
 - **ChatGPT** → Generated the **Mermaid system architecture diagram** from the prompt in [`2.1/chatgpt/chatgpt_prompt.txt`](2.1/chatgpt/chatgpt_prompt.txt). The resulting Mermaid code is saved in [`2.1/chatgpt/mermaid code.txt`](2.1/chatgpt/mermaid%20code.txt) and rendered into the architecture diagram during the workshop.
-- **Nano Banana** (diagram tool) → Took the user‑flow prompt in [`2.1/Nano Banana/prompt.txt`](2.1/Nano%20Banana/prompt.txt) and produced the user‑flow architecture image saved as [`2.1/Nano Banana/output.png`](2.1/Nano%20Banana/output.png).
+- **Nano Banana** (diagram tool) → Took the user‑flow prompt in [`2.1/Nano Banana/prompt.txt`](2.1/Nano%20Banana/prompt.txt) and produced the user‑flow architecture image saved as  
+<img width="1102" height="800" alt="output" src="https://github.com/user-attachments/assets/05e83e43-4da4-48e5-8202-363e14979faa" />
 
 **Outputs:**
 - High‑level **system architecture diagram** (Mermaid).
