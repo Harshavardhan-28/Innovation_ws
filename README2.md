@@ -24,6 +24,8 @@ We gather research, structure insights, and validate an agentic product idea usi
 	- [2.1 — AI‑Driven Solution Architecture](#21--ai-driven-solution-architecture)
 	- [2.2 — UXUI Wireframe Generation](#22--uxui-wireframe-generation)
 	- [2.3 — Business Model & Strategy with GitHub Copilot](#23--business-model--strategy-with-github-copilot)
+- [Phase 3 — Functional MVP Prototype](#phase-3--functional-mvp-prototype-with-github-copilot)
+	- [3.1 — MVP Implementation](#31--mvp-implementation)
 
 ---
 
@@ -221,5 +223,158 @@ After validating the problem and opportunity (Phase 1) and defining an MVP (1.3)
 **Outputs:**
 - Business model and strategy notes under `2.3/GitHub Copilot/` (used as source material for slides and discussions).
 - A repeatable pattern for using GitHub Copilot as a **business co‑designer**, not just a coding assistant.
+
+---
+
+# Phase 3 — Functional MVP Prototype with GitHub Copilot
+
+After completing research, validation, design, and business strategy, Phase 3 demonstrates how to go from **specification to working code** using GitHub Copilot as an AI pair programmer.
+
+## 3.1 — MVP Implementation
+
+**Blueprint objective:** Build a minimal but functional prototype that students can run locally, understand, and extend.
+
+**Files:**
+- Full source code in [`mvp/`](mvp/)
+- Project README: [`mvp/README.md`](mvp/README.md)
+
+### What We Built
+
+Using the PRD from Phase 1.3 as a guide, GitHub Copilot helped generate a **complete Next.js web application** with:
+
+| Component | Implementation | Purpose |
+|-----------|---------------|---------|
+| **Frontend** | Next.js 14 + TypeScript + React | Modern, type-safe UI framework |
+| **Authentication** | Mock auth with React Context | Replaceable with Firebase/NextAuth |
+| **Data Layer** | In-memory storage | Simple for learning, swap for database later |
+| **Resume Parser** | Keyword-based skill extraction | Demonstrates where AI would plug in |
+| **Matching Engine** | Weighted scoring (0-100) | Simulates vector similarity matching |
+| **Email Generator** | Template-based drafts | Placeholder for LLM-powered generation |
+| **Compliance Check** | Rule-based filtering | Safety layer for outreach content |
+
+### Project Structure
+
+```
+mvp/
+├── src/
+│   ├── app/                    # Next.js pages & API routes
+│   │   ├── api/               # Backend endpoints
+│   │   │   ├── auth/          # Login, signup, session
+│   │   │   ├── match/         # Internship matching
+│   │   │   ├── resume/        # Resume parsing
+│   │   │   └── outreach/      # Email generation
+│   │   ├── dashboard/         # Main user dashboard
+│   │   ├── onboarding/        # Resume + preferences setup
+│   │   └── internship/[id]/   # Internship detail + outreach
+│   │
+│   ├── lib/                   # Core business logic
+│   │   ├── matchingEngine.ts  # Weighted scoring algorithm
+│   │   ├── resumeParser.ts    # Skill extraction (60+ keywords)
+│   │   ├── outreachGenerator.ts # Email template system
+│   │   └── safetyCheck.ts     # Compliance validation
+│   │
+│   ├── data/                  # Mock data
+│   │   ├── internships.ts     # 15 sample internships
+│   │   └── userStore.ts       # In-memory user database
+│   │
+│   └── types/                 # TypeScript interfaces
+│       └── index.ts           # All type definitions
+```
+
+### How to Run the Prototype
+
+```bash
+# Navigate to the MVP folder
+cd mvp
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Open http://localhost:3000
+```
+
+**Demo Account:** `demo@student.edu` / `demo123`
+
+### Key User Flows
+
+1. **Sign Up / Login** → Create account or use demo credentials
+2. **Onboarding** → Paste resume text, skills are auto-extracted
+3. **Set Preferences** → Choose role types, locations, internship types
+4. **Dashboard** → View personalized matches with scores (0-100)
+5. **Internship Details** → See full description, generate outreach email
+6. **Copy/Send Email** → Use generated email to reach out to companies
+
+### Why This Boilerplate Is Useful for Further Development
+
+The MVP is intentionally designed as a **learning scaffold** with clear extension points:
+
+#### 🟢 Beginner Extensions
+- Add more internships to `src/data/internships.ts`
+- Add new skill keywords to `src/lib/resumeParser.ts`
+- Customize email templates in `src/lib/outreachGenerator.ts`
+- Add new preference options (e.g., stipend range filter)
+
+#### 🟡 Intermediate Extensions
+- Replace in-memory storage with **Firebase Firestore** or **Supabase**
+- Add real authentication with **NextAuth.js** or **Firebase Auth**
+- Implement email sending with **Resend** or **SendGrid**
+- Add a favorites/bookmarks feature for internships
+- Build a history page showing all generated outreach emails
+
+#### 🔴 Advanced Extensions (Production-Ready)
+- Replace keyword matching with **OpenAI embeddings** for semantic resume parsing
+- Use **GPT-4 or Claude** to generate personalized outreach emails
+- Implement **vector similarity search** with Pinecone or Weaviate for matching
+- Add **AI-powered content moderation** for compliance checking
+- Deploy to **Vercel** with proper environment variables and database
+
+### Workshop Notes in Code
+
+Every module includes `🎓 WORKSHOP NOTE` comments explaining:
+- What the current (simulated) implementation does
+- How a production system would work differently
+- Code snippets showing real AI integration patterns
+
+Example from `matchingEngine.ts`:
+```typescript
+/**
+ * 🎓 WORKSHOP NOTE:
+ * This uses a simple weighted scoring system. In production:
+ * - Use vector embeddings (OpenAI, Cohere) for semantic matching
+ * - Implement collaborative filtering based on similar students
+ * - Use ML models trained on successful placements
+ */
+```
+
+### What GitHub Copilot Helped With
+
+Throughout this phase, Copilot assisted with:
+- **Scaffolding** — Generating project structure, configs, and boilerplate
+- **Type Definitions** — Creating comprehensive TypeScript interfaces
+- **API Routes** — Writing Next.js API handlers with proper error handling
+- **React Components** — Building pages with state management and form handling
+- **Business Logic** — Implementing matching algorithms and email templates
+- **Documentation** — Writing inline comments and README content
+
+This demonstrates how AI coding assistants can accelerate prototyping while keeping code **readable and maintainable** for human developers.
+
+---
+
+## Summary: From Idea to Working Prototype
+
+| Phase | Focus | AI Tools Used |
+|-------|-------|---------------|
+| **1.1** | Problem Discovery | Perplexity AI |
+| **1.2** | Market Validation | Perplexity AI |
+| **1.3** | MVP Specification | GitHub Copilot |
+| **2.1** | System Architecture | ChatGPT, Nano Banana |
+| **2.2** | UX/UI Wireframes | Uizard AI |
+| **2.3** | Business Model | GitHub Copilot |
+| **3.1** | Functional Prototype | GitHub Copilot |
+
+This end-to-end journey shows how entrepreneurs and students can leverage AI tools across the entire product development lifecycle — from initial research through to working code.
 
 
