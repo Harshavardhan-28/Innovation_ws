@@ -141,6 +141,9 @@ After validating the problem and opportunity (Phase 1) and defining an MVP (1.3)
 
 **Tools used in this repo:**
 - **ChatGPT** → Generated the **Mermaid system architecture diagram** from the prompt in [`2.1/chatgpt/chatgpt_prompt.txt`](2.1/chatgpt/chatgpt_prompt.txt). The resulting Mermaid code is saved in [`2.1/chatgpt/mermaid code.txt`](2.1/chatgpt/mermaid%20code.txt) and rendered into the architecture diagram during the workshop.
+
+<img width="8765" height="3340" alt="Mermaid diagram" src="https://github.com/user-attachments/assets/9d1f24ca-4798-452f-ac85-e84ee32e32a4" />
+  
 - **Nano Banana** (diagram tool) → Took the user‑flow prompt in [`2.1/Nano Banana/prompt.txt`](2.1/Nano%20Banana/prompt.txt) and produced the user‑flow architecture image:
 <img width="1102" height="800" alt="output" src="https://github.com/user-attachments/assets/05e83e43-4da4-48e5-8202-363e14979faa" />
 <img width="2816" height="1536" alt="generated diagram" src="https://github.com/user-attachments/assets/6a1bba3e-10b6-47d9-a6e7-fd54f1b8102b" />
@@ -164,6 +167,8 @@ After validating the problem and opportunity (Phase 1) and defining an MVP (1.3)
 - **Uizard AI** → Using the brief in [`2.2/Uizard AI/promot.txt`](2.2/Uizard%20AI/promot.txt), Uizard generated **mock wireframes** for the student‑facing web app (see all artifacts.
 
 <img width="1752" height="422" alt="output overview" src="https://github.com/user-attachments/assets/ca2854a7-daa3-4c08-b209-587bd3895d83" />
+<img width="1053" height="661" alt="homepage" src="https://github.com/user-attachments/assets/74d67da4-c2a3-4346-912b-ea54f15befab" />
+
 
 
 **Outputs:**
