@@ -108,6 +108,30 @@ Together, these phases justify moving into **ideation and system design** for a 
 
 ## Phase 1.3 — MVP Specification with GitHub Copilot
 
+## About GitHub Copilot
+
+Before we define our MVP, let's introduce the tool we'll use to build it: *GitHub Copilot*.
+
+### What is GitHub Copilot?
+GitHub Copilot is an AI-powered coding assistant developed by GitHub and OpenAI. It functions as an "AI pair programmer" that works directly inside your code editor (like VS Code). It suggests whole lines or entire functions instantly as you type, and can also answer natural language questions about your codebase, generate documentation, and help debug errors.
+
+### Why is it Beneficial for Students?
+- *Accelerated Learning:* It helps students understand new languages or frameworks faster by providing contextual examples and explanations.
+- *Focus on Logic, Not Syntax:* Instead of getting stuck on boilerplate code or syntax errors, students can focus on the higher-level logic and problem-solving aspects of their projects.
+- *Real-time Guidance:* It acts like a tutor available 24/7, offering suggestions and corrections as you code, which builds confidence and reduces frustration.
+- *Industry Standard:* Learning to code with AI assistance is becoming a standard skill in the tech industry, preparing students for modern development workflows.
+
+### Key Advantages & Features
+- *Code Completion:* Suggests code in real-time based on context and comments.
+- *Chat Interface:* Allows you to ask questions like "How do I center a div?" or "Explain this function" directly in the IDE.
+- *Multi-Language Support:* Works proficiently with Python, JavaScript, TypeScript, Ruby, Go, and dozens of other languages.
+- *Test Generation:* Can automatically generate unit tests for your code, encouraging better testing practices.
+- *Context Awareness:* It understands the files in your active workspace to provide relevant suggestions tailored to your specific project.
+
+---
+
+## Phase 1.3 — MVP
+
 **Files:**
 - [mvp.md](1.3/mvp.md)
 
@@ -187,9 +211,11 @@ After validating the problem and opportunity (Phase 1) and defining an MVP (1.3)
 **Tools used in this repo:**
 - **GitHub Copilot** → Starting from the detailed brief in [`2.3/GitHub Copilot/prompt.txt`](2.3/GitHub%20Copilot/prompt.txt), Copilot helps draft (see outputs under [`2.3/GitHub Copilot/`](2.3/GitHub%20Copilot/)):
 <img width="1202" height="793" alt="output image" src="https://github.com/user-attachments/assets/40ab7203-afe2-437f-81b1-b5e8ecf50136" />
-	- A **Business Model Canvas** (customer segments, value prop, key activities/resources, channels, revenue, costs, partners).
-	- A **pricing strategy** (freemium, Pro subscription, enterprise/university licensing).
-	- An **AI‑supported GTM plan**, competitive landscape, strategy docs, and a **pitch deck outline**.
+
+
+- A **Business Model Canvas** (customer segments, value prop, key activities/resources, channels, revenue, costs, partners).
+- A **pricing strategy** (freemium, Pro subscription, enterprise/university licensing).
+- An **AI‑supported GTM plan**, competitive landscape, strategy docs, and a **pitch deck outline**.
 
 **Outputs:**
 - Business model and strategy notes under `2.3/GitHub Copilot/` (used as source material for slides and discussions).
