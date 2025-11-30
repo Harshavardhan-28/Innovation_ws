@@ -1,7 +1,8 @@
 # Project Development Blueprint using AI
 
-This repository demonstrates how entrepreneurs can use AI tools end-to-end for **ideation → design → prototyping**, illustrated by a focused case study covering the **Ideation Phase** only.  
-We gather research, structure insights, and validate an agentic product idea using the workflow: **Perplexity → Notion AI → Gemini**.
+
+This repository demonstrates how entrepreneurs can use AI tools end-to-end for **ideation → design → prototyping**, illustrated by a focused case study covering **Research, Validation, and Design**.  
+We gather research, structure insights, and validate an agentic product idea using a diverse AI workflow: **Perplexity → GitHub Copilot → ChatGPT → Uizard**.
 
 ![InternScout AI](https://img.shields.io/badge/InternScout--AI-v0.1.0-blue)
 
