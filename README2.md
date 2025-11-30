@@ -141,8 +141,11 @@ After validating the problem and opportunity (Phase 1) and defining an MVP (1.3)
 
 **Tools used in this repo:**
 - **ChatGPT** → Generated the **Mermaid system architecture diagram** from the prompt in [`2.1/chatgpt/chatgpt_prompt.txt`](2.1/chatgpt/chatgpt_prompt.txt). The resulting Mermaid code is saved in [`2.1/chatgpt/mermaid code.txt`](2.1/chatgpt/mermaid%20code.txt) and rendered into the architecture diagram during the workshop.
-- **Nano Banana** (diagram tool) → Took the user‑flow prompt in [`2.1/Nano Banana/prompt.txt`](2.1/Nano%20Banana/prompt.txt) and produced the user‑flow architecture image saved as  
+- **Nano Banana** (diagram tool) → Took the user‑flow prompt in [`2.1/Nano Banana/prompt.txt`](2.1/Nano%20Banana/prompt.txt) and produced the user‑flow architecture image:
 <img width="1102" height="800" alt="output" src="https://github.com/user-attachments/assets/05e83e43-4da4-48e5-8202-363e14979faa" />
+<img width="2816" height="1536" alt="generated diagram" src="https://github.com/user-attachments/assets/6a1bba3e-10b6-47d9-a6e7-fd54f1b8102b" />
+
+
 
 **Outputs:**
 - High‑level **system architecture diagram** (Mermaid).
@@ -158,7 +161,10 @@ After validating the problem and opportunity (Phase 1) and defining an MVP (1.3)
 - Map user flows across authentication, dashboard, opportunities, outreach, and tracking.
 
 **Tools used in this repo:**
-- **Uizard AI** → Using the brief in [`2.2/Uizard AI/promot.txt`](2.2/Uizard%20AI/promot.txt), Uizard generated **mock wireframes** for the student‑facing web app (see all artifacts under [`2.2/Uizard AI/`](2.2/Uizard%20AI/)).
+- **Uizard AI** → Using the brief in [`2.2/Uizard AI/promot.txt`](2.2/Uizard%20AI/promot.txt), Uizard generated **mock wireframes** for the student‑facing web app (see all artifacts.
+
+<img width="1752" height="422" alt="output overview" src="https://github.com/user-attachments/assets/ca2854a7-daa3-4c08-b209-587bd3895d83" />
+
 
 **Outputs:**
 - Low‑fidelity wireframes for core screens (auth, onboarding, dashboard, opportunity details, outreach, tracking, settings).
@@ -175,6 +181,7 @@ After validating the problem and opportunity (Phase 1) and defining an MVP (1.3)
 
 **Tools used in this repo:**
 - **GitHub Copilot** → Starting from the detailed brief in [`2.3/GitHub Copilot/prompt.txt`](2.3/GitHub%20Copilot/prompt.txt), Copilot helps draft (see outputs under [`2.3/GitHub Copilot/`](2.3/GitHub%20Copilot/)):
+<img width="1202" height="793" alt="output image" src="https://github.com/user-attachments/assets/40ab7203-afe2-437f-81b1-b5e8ecf50136" />
 	- A **Business Model Canvas** (customer segments, value prop, key activities/resources, channels, revenue, costs, partners).
 	- A **pricing strategy** (freemium, Pro subscription, enterprise/university licensing).
 	- An **AI‑supported GTM plan**, competitive landscape, strategy docs, and a **pitch deck outline**.
